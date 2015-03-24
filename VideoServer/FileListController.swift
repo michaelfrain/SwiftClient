@@ -42,6 +42,9 @@ class FileListController: UIViewController {
     }
     */
 
+    @IBAction func backButtonPressed(sender: UIButton!) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 }
 
 extension FileListController: UITableViewDataSource {
