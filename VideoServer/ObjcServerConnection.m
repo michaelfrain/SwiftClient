@@ -79,37 +79,17 @@
     if ([relativePath isEqualToString:@"/download"]) {
         NSDictionary *params = [self parseGetParams];
         NSArray *array = [params objectForKey:@"clips"];
-        NSMutableArray *clipArray = [[NSMutableArray alloc] init];
+        NSMutableDictionary *clipDict = [[NSMutableDictionary alloc] init];
         for (filePath in array) {
             NSData *clip = [NSData dataWithContentsOfFile:filePath];
             if (clip != nil) {
-                [clipArray addObject:clip];
+                [clipDict setValue:clip forKey:filePath];
             }
         }
-        NSData *serializedArray = [NSKeyedArchiver archivedDataWithRootObject:clipArray];
+        NSData *serializedArray = [NSKeyedArchiver archivedDataWithRootObject:clipDict];
         dataResponse = [[HTTPDataResponse alloc] initWithData:serializedArray];
     }
     return dataResponse;
 }
-
-/*
- override func httpResponseForMethod(method: String!, URI path: String!) -> NSObject! {
- let filePath = filePathForURI(path)
- 
- if !filePath.hasPrefix(AddressHelper.documentsDirectory()) {
- return nil
- }
- 
- let relativePath = filePath.substringFromIndex(advance(AddressHelper.documentsDirectory().startIndex, AddressHelper.documentsDirectory().utf16Count))
- 
- if relativePath == "/upload" {
- 
- } else if relativePath == "/download" {
- 
- }
- 
- return nil
- }
-*/
 
 @end

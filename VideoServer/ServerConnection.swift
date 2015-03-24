@@ -9,7 +9,7 @@
 import UIKit
 
 class ServerConnection: HTTPConnection {
-    
+    // Note: We can't use this class yet, until Apple figures out the issues with introspection in Swift. Use ObjcServerConnection instead.
     override func supportsMethod(method: String!, atPath path: String!) -> Bool {
         if method == "POST" {
             NSLog("YES")
