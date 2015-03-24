@@ -9,11 +9,21 @@
 import UIKit
 
 class FileListController: UIViewController {
+    var localhostArray: Array<NSURL> {
+        let localhost = NSURL(string: AddressHelper.documentsDirectory())
+        let manager = NSFileManager.defaultManager()
+        let fileList = manager.contentsOfDirectoryAtURL(localhost!, includingPropertiesForKeys: nil, options: NSDirectoryEnumerationOptions.SkipsHiddenFiles, error: nil)
+        return fileList as Array<NSURL>
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
     }
 
     override func didReceiveMemoryWarning() {
@@ -32,4 +42,19 @@ class FileListController: UIViewController {
     }
     */
 
+}
+
+extension FileListController: UITableViewDataSource {
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        let rows = localhostArray.count
+        return rows
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("FileCell") as UITableViewCell
+        let url = localhostArray[indexPath.row]
+        cell.textLabel!.text = url.path
+        return cell
+    }
+    
 }

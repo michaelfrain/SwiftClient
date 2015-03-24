@@ -10,4 +10,8 @@
 
 @interface AddressHelper : NSObject
 
++ (NSString *)getIPAddress:(BOOL)preferIPv4;
++ (NSString *)documentsDirectory;
++ (NSArray *)getFullFileList;
+
 @end

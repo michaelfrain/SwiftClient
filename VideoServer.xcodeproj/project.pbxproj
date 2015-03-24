@@ -7,12 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76D47C516D54DBD1DC18174F /* libPods-VideoServer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAF600B58C7252E53BABF11B /* libPods-VideoServer.a */; };
+		D3577EA21AC11CE500B6BC96 /* ObjcServerController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3577EA11AC11CE500B6BC96 /* ObjcServerController.m */; };
+		D3577EA51AC1203900B6BC96 /* ObjcServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = D3577EA41AC1203900B6BC96 /* ObjcServerConnection.m */; };
 		D3773B5D1AC0B9AF001E8713 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3773B5C1AC0B9AF001E8713 /* AppDelegate.swift */; };
-		D3773B5F1AC0B9AF001E8713 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3773B5E1AC0B9AF001E8713 /* ViewController.swift */; };
 		D3773B621AC0B9AF001E8713 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3773B601AC0B9AF001E8713 /* Main.storyboard */; };
 		D3773B641AC0B9B0001E8713 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3773B631AC0B9B0001E8713 /* Images.xcassets */; };
 		D3773B671AC0B9B0001E8713 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3773B651AC0B9B0001E8713 /* LaunchScreen.xib */; };
 		D3773B731AC0B9B0001E8713 /* VideoServerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3773B721AC0B9B0001E8713 /* VideoServerTests.swift */; };
+		D3773B7D1AC0BCA2001E8713 /* ServerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3773B7C1AC0BCA2001E8713 /* ServerController.swift */; };
+		D3773B7F1AC0F26B001E8713 /* ServerConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3773B7E1AC0F26B001E8713 /* ServerConnection.swift */; };
+		D3773B811AC1156F001E8713 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3773B801AC1156F001E8713 /* Alamofire.framework */; };
+		D3C643361AC0BF540043D34A /* AddressHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C643351AC0BF540043D34A /* AddressHelper.m */; };
+		D3C643381AC0C7950043D34A /* FileListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C643371AC0C7950043D34A /* FileListController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +33,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9C4B78CA398FB1DDE73704DA /* Pods-VideoServer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoServer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VideoServer/Pods-VideoServer.debug.xcconfig"; sourceTree = "<group>"; };
+		AAF600B58C7252E53BABF11B /* libPods-VideoServer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VideoServer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3577EA01AC11CE500B6BC96 /* ObjcServerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjcServerController.h; sourceTree = "<group>"; };
+		D3577EA11AC11CE500B6BC96 /* ObjcServerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjcServerController.m; sourceTree = "<group>"; };
+		D3577EA31AC1203900B6BC96 /* ObjcServerConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjcServerConnection.h; sourceTree = "<group>"; };
+		D3577EA41AC1203900B6BC96 /* ObjcServerConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjcServerConnection.m; sourceTree = "<group>"; };
 		D3773B571AC0B9AF001E8713 /* VideoServer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoServer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3773B5B1AC0B9AF001E8713 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3773B5C1AC0B9AF001E8713 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D3773B5E1AC0B9AF001E8713 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D3773B611AC0B9AF001E8713 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D3773B631AC0B9B0001E8713 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D3773B661AC0B9B0001E8713 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D3773B6C1AC0B9B0001E8713 /* VideoServerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VideoServerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3773B711AC0B9B0001E8713 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3773B721AC0B9B0001E8713 /* VideoServerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoServerTests.swift; sourceTree = "<group>"; };
+		D3773B7C1AC0BCA2001E8713 /* ServerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerController.swift; sourceTree = "<group>"; };
+		D3773B7E1AC0F26B001E8713 /* ServerConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerConnection.swift; sourceTree = "<group>"; };
+		D3773B801AC1156F001E8713 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		D3C643301AC0BE530043D34A /* VideoServer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VideoServer-Bridging-Header.h"; sourceTree = "<group>"; };
+		D3C643341AC0BF540043D34A /* AddressHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressHelper.h; sourceTree = "<group>"; };
+		D3C643351AC0BF540043D34A /* AddressHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressHelper.m; sourceTree = "<group>"; };
+		D3C643371AC0C7950043D34A /* FileListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileListController.swift; sourceTree = "<group>"; };
+		F522CAF16061C9808D5FB0A2 /* Pods-VideoServer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoServer.release.xcconfig"; path = "Pods/Target Support Files/Pods-VideoServer/Pods-VideoServer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76D47C516D54DBD1DC18174F /* libPods-VideoServer.a in Frameworks */,
+				D3773B811AC1156F001E8713 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +78,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7EBC03FBEC1A1470BD901AC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D3773B801AC1156F001E8713 /* Alamofire.framework */,
+				AAF600B58C7252E53BABF11B /* libPods-VideoServer.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF2D9E92AA551064CE71BA5A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9C4B78CA398FB1DDE73704DA /* Pods-VideoServer.debug.xcconfig */,
+				F522CAF16061C9808D5FB0A2 /* Pods-VideoServer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D3773B4E1AC0B9AF001E8713 = {
 			isa = PBXGroup;
 			children = (
 				D3773B591AC0B9AF001E8713 /* VideoServer */,
 				D3773B6F1AC0B9B0001E8713 /* VideoServerTests */,
 				D3773B581AC0B9AF001E8713 /* Products */,
+				AF2D9E92AA551064CE71BA5A /* Pods */,
+				7EBC03FBEC1A1470BD901AC5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,11 +120,20 @@
 			isa = PBXGroup;
 			children = (
 				D3773B5C1AC0B9AF001E8713 /* AppDelegate.swift */,
-				D3773B5E1AC0B9AF001E8713 /* ViewController.swift */,
 				D3773B601AC0B9AF001E8713 /* Main.storyboard */,
 				D3773B631AC0B9B0001E8713 /* Images.xcassets */,
 				D3773B651AC0B9B0001E8713 /* LaunchScreen.xib */,
 				D3773B5A1AC0B9AF001E8713 /* Supporting Files */,
+				D3773B7C1AC0BCA2001E8713 /* ServerController.swift */,
+				D3C643301AC0BE530043D34A /* VideoServer-Bridging-Header.h */,
+				D3C643341AC0BF540043D34A /* AddressHelper.h */,
+				D3C643351AC0BF540043D34A /* AddressHelper.m */,
+				D3C643371AC0C7950043D34A /* FileListController.swift */,
+				D3773B7E1AC0F26B001E8713 /* ServerConnection.swift */,
+				D3577EA01AC11CE500B6BC96 /* ObjcServerController.h */,
+				D3577EA11AC11CE500B6BC96 /* ObjcServerController.m */,
+				D3577EA31AC1203900B6BC96 /* ObjcServerConnection.h */,
+				D3577EA41AC1203900B6BC96 /* ObjcServerConnection.m */,
 			);
 			path = VideoServer;
 			sourceTree = "<group>";
@@ -119,9 +170,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D3773B761AC0B9B0001E8713 /* Build configuration list for PBXNativeTarget "VideoServer" */;
 			buildPhases = (
+				539545D6703338144A6499CD /* Check Pods Manifest.lock */,
 				D3773B531AC0B9AF001E8713 /* Sources */,
 				D3773B541AC0B9AF001E8713 /* Frameworks */,
 				D3773B551AC0B9AF001E8713 /* Resources */,
+				906CB0CDF7F7161BC1F4BA15 /* Copy Pods Resources */,
+				D3773B821AC115AE001E8713 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -207,13 +261,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		539545D6703338144A6499CD /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		906CB0CDF7F7161BC1F4BA15 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VideoServer/Pods-VideoServer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3773B821AC115AE001E8713 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D3773B531AC0B9AF001E8713 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3773B5F1AC0B9AF001E8713 /* ViewController.swift in Sources */,
+				D3C643361AC0BF540043D34A /* AddressHelper.m in Sources */,
 				D3773B5D1AC0B9AF001E8713 /* AppDelegate.swift in Sources */,
+				D3773B7D1AC0BCA2001E8713 /* ServerController.swift in Sources */,
+				D3577EA51AC1203900B6BC96 /* ObjcServerConnection.m in Sources */,
+				D3773B7F1AC0F26B001E8713 /* ServerConnection.swift in Sources */,
+				D3577EA21AC11CE500B6BC96 /* ObjcServerController.m in Sources */,
+				D3C643381AC0C7950043D34A /* FileListController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,21 +442,36 @@
 		};
 		D3773B771AC0B9B0001E8713 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C4B78CA398FB1DDE73704DA /* Pods-VideoServer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = VideoServer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VideoServer/VideoServer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		D3773B781AC0B9B0001E8713 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F522CAF16061C9808D5FB0A2 /* Pods-VideoServer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = VideoServer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VideoServer/VideoServer-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -407,6 +528,7 @@
 				D3773B781AC0B9B0001E8713 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D3773B791AC0B9B0001E8713 /* Build configuration list for PBXNativeTarget "VideoServerTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +537,7 @@
 				D3773B7B1AC0B9B0001E8713 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
