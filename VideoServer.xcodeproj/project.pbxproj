@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		76D47C516D54DBD1DC18174F /* libPods-VideoServer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAF600B58C7252E53BABF11B /* libPods-VideoServer.a */; };
+		D35457231AC224DB00EC9F5C /* 2831753_2859843_lz.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D35457221AC224DB00EC9F5C /* 2831753_2859843_lz.jpg */; };
 		D3577EA21AC11CE500B6BC96 /* ObjcServerController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3577EA11AC11CE500B6BC96 /* ObjcServerController.m */; };
 		D3577EA51AC1203900B6BC96 /* ObjcServerConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = D3577EA41AC1203900B6BC96 /* ObjcServerConnection.m */; };
 		D3773B5D1AC0B9AF001E8713 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3773B5C1AC0B9AF001E8713 /* AppDelegate.swift */; };
@@ -35,6 +36,7 @@
 /* Begin PBXFileReference section */
 		9C4B78CA398FB1DDE73704DA /* Pods-VideoServer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoServer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VideoServer/Pods-VideoServer.debug.xcconfig"; sourceTree = "<group>"; };
 		AAF600B58C7252E53BABF11B /* libPods-VideoServer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VideoServer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D35457221AC224DB00EC9F5C /* 2831753_2859843_lz.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2831753_2859843_lz.jpg; sourceTree = "<group>"; };
 		D3577EA01AC11CE500B6BC96 /* ObjcServerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjcServerController.h; sourceTree = "<group>"; };
 		D3577EA11AC11CE500B6BC96 /* ObjcServerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjcServerController.m; sourceTree = "<group>"; };
 		D3577EA31AC1203900B6BC96 /* ObjcServerConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjcServerConnection.h; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				D3773B7C1AC0BCA2001E8713 /* ServerController.swift */,
 				D3C643301AC0BE530043D34A /* VideoServer-Bridging-Header.h */,
 				D3C643341AC0BF540043D34A /* AddressHelper.h */,
+				D35457221AC224DB00EC9F5C /* 2831753_2859843_lz.jpg */,
 				D3C643351AC0BF540043D34A /* AddressHelper.m */,
 				D3C643371AC0C7950043D34A /* FileListController.swift */,
 				D3773B7E1AC0F26B001E8713 /* ServerConnection.swift */,
@@ -247,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3773B621AC0B9AF001E8713 /* Main.storyboard in Resources */,
+				D35457231AC224DB00EC9F5C /* 2831753_2859843_lz.jpg in Resources */,
 				D3773B671AC0B9B0001E8713 /* LaunchScreen.xib in Resources */,
 				D3773B641AC0B9B0001E8713 /* Images.xcassets in Resources */,
 			);
