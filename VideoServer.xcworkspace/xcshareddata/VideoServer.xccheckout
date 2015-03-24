@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F07A491F-EC4F-4790-9C5D-C9593CD8C731</string>
+	<key>IDESourceControlProjectName</key>
+	<string>VideoServer</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>07CF4F1D5114A24C8A27917074EFF030CDCAF5B3</key>
+		<string>https://github.com/michaelfrain/SwiftClient.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>VideoServer.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>07CF4F1D5114A24C8A27917074EFF030CDCAF5B3</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/michaelfrain/SwiftClient.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>07CF4F1D5114A24C8A27917074EFF030CDCAF5B3</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>07CF4F1D5114A24C8A27917074EFF030CDCAF5B3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>VideoServer</string>
+		</dict>
+	</array>
+</dict>
+</plist>
