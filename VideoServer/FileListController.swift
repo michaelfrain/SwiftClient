@@ -56,7 +56,9 @@ extension FileListController: UITableViewDataSource {
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("FileCell") as UITableViewCell
         let url = localhostArray[indexPath.row]
-        cell.textLabel!.text = url.path
+        let pathArray = url.path!.componentsSeparatedByString("/")
+        let shortPath = pathArray[pathArray.count - 1]
+        cell.textLabel!.text = shortPath
         return cell
     }
     
