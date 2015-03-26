@@ -13,5 +13,6 @@
 + (NSString *)getIPAddress:(BOOL)preferIPv4;
 + (NSString *)documentsDirectory;
 + (NSArray *)getFullFileList;
++ (NSData *)generatePlaylist:(NSArray *)tracks;
 
 @end

@@ -83,4 +83,19 @@
     return fileList;
 }
 
++ (NSData *)generatePlaylist:(NSArray *)tracks {
+    NSMutableString *playlist = [[NSMutableString alloc] init];
+    [playlist appendString:@"#EXTM3U\n"];
+    [playlist appendString:@"#EXT-X-TARGETDURATION:8\n"];
+    for (NSString *track in tracks) {
+        [playlist appendString:@"#EXTINF:8\n"];
+        [playlist appendFormat:@"http://%@:%@/", [AddressHelper getIPAddress:YES], @"8080"];
+        [playlist appendString:track];
+        [playlist appendString:@"\n"];
+    }
+    [playlist appendString:@"#EXT-X-ENDLIST"];
+    NSData *playlistData = [playlist dataUsingEncoding:NSUTF8StringEncoding];
+    return playlistData;
+}
+
 @end

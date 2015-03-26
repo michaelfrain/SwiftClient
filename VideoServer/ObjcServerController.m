@@ -28,7 +28,15 @@
     [super viewDidLoad];
     self.server = [[HTTPServer alloc] init];
     [self.server setPort:8080];
-    [self.server setDocumentRoot:[AddressHelper documentsDirectory]];
+    
+    NSDate *date = [NSDate date];
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSDateComponents *components = [calendar components:NSCalendarUnitDay fromDate:date];
+    NSInteger day = components.day;
+    
+    NSFileManager *manager = [NSFileManager defaultManager];
+    BOOL success = [manager createDirectoryAtPath:[NSString stringWithFormat:@"%@/26", [AddressHelper documentsDirectory]] withIntermediateDirectories:YES attributes:nil error:nil];
+    [self.server setDocumentRoot:[NSString stringWithFormat:@"%@/%lu", [AddressHelper documentsDirectory], day]];
     [self.server setConnectionClass:[ObjcServerConnection class]];
     self.currentAddress = [AddressHelper getIPAddress:YES];
 }
